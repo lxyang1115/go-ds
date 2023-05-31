@@ -1,21 +1,25 @@
 package algorithm
 
-func max[T Ordered](a, b T) T {
+import (
+	"go-ds/utils/comparator"
+)
+
+func Max[T comparator.Ordered](a, b T) T {
 	if a > b {
 		return a
 	}
 	return b
 }
 
-func min[T Ordered](a, b T) T {
+func Min[T comparator.Ordered](a, b T) T {
 	if a < b {
 		return a
 	}
 	return b
 }
 
-func abs[T Numeric](a T) T {
-	if a < 0 {
+func Abs[T comparator.Numeric](a T) T {
+	if a < T(0) {
 		return -a
 	}
 	return a

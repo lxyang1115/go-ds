@@ -1,3 +1,3 @@
-module github.com/lxyang1115/go-ds
+module go-ds
 
 go 1.20
